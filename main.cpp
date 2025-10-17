@@ -43,10 +43,11 @@ int main() {
     }
 
     // populate queue A by enqueueing random values
+    srand(time(0));
     for (int i = 0; i < queueA.getMaxSize(); i++) {
-        queueA.enqueue(i);
+        queueA.enqueue(rand() % 500);
     }
-    
+
     // ensure that queue A is now full
     if (queueA.isFull()) {
         cout << "queue A is full! ";
