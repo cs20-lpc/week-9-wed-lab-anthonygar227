@@ -46,7 +46,7 @@ int main() {
     for (int i = 0; i < queueA.getMaxSize(); i++) {
         queueA.enqueue(i);
     }
-
+    
     // ensure that queue A is now full
     if (queueA.isFull()) {
         cout << "queue A is full! ";
