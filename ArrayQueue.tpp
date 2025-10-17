@@ -11,7 +11,7 @@ ArrayQueue<T>::ArrayQueue(int i) {
     this->length = 0;
     frontIndex = 0;
 
-    backIndex = maxSize - 1;
+    backIndex = -1;
 }
 
 template <typename T>
